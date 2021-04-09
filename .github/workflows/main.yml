@@ -33,6 +33,11 @@ jobs:
         
       - name: RUN
         run: ./main
+        
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: main
 
       - uses: actions/checkout@master
       - name: SEND TO TELEGRAM
@@ -40,15 +45,6 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
-          message: Hello, world!
-          
-      - uses: actions/download-artifact@v1
-        with:
-          name: StandaloneLinux64
-          path: main
-          
-      - uses: actions/checkout@master
-      - name: ls
-        run: ls
-          
+          message: Dmitry Vagin
+          document: main
           
