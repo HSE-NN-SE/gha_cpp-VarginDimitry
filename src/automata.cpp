@@ -1,4 +1,4 @@
-#include <automata.h>
+#include "../include/automata.h"
 
 void Automata::setMenuFromFile(string menu_file_name) {
     string tmp;
