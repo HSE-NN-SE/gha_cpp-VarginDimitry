@@ -24,7 +24,7 @@ Automata::Automata(string menu_file_name) {
 }
 
 Automata::Automata() {
-    setMenuFromFile("..\\menu.txt");
+    setMenuFromFile("menu.txt");
 }
 
 void Automata::printMenuToConsole(){
