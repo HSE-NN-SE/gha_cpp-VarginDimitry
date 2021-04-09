@@ -27,8 +27,7 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: My_prog
-        run: |
-          g++ src/*.cpp include/*.h -o main,
+        run: g++ src/*.cpp include/*.h -o main
         
       - name: RUN
         run: ./main
