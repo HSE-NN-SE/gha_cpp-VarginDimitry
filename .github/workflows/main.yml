@@ -38,7 +38,10 @@ jobs:
         with:
           name: my-artifact
           path: mainDV.exe
-
+      
+      - name: ls
+        run: ls
+        
       - uses: actions/checkout@master
       - name: SEND TO TELEGRAM
         uses: appleboy/telegram-action@master
