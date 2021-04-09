@@ -33,11 +33,11 @@ jobs:
         
       - name: RUN
         run: ./mainDV.exe
-        
+            
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
-          path: main.exe
+          path: mainDV.exe
 
       - uses: actions/checkout@master
       - name: SEND TO TELEGRAM
