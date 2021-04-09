@@ -25,8 +25,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Telegram Notify
-        uses: appleboy/telegram-action@0.0.3
         
       - name: My_prog
         run: g++ src/*.cpp include/*.h -o main
