@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/automata.h
+iostream
+-
+string
+-
+map
+-
+fstream
+-
+cstring
+-
+cstdlib
+-
+unistd.h
+-
+
+/cygdrive/c/MAIN/education/programming/C++/devops/src/automata.cpp
+automata.h
+-
+
+/cygdrive/c/MAIN/education/programming/C++/devops/src/main.cpp
+automata.h
+/cygdrive/c/MAIN/education/programming/C++/devops/src/automata.h
+

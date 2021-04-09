@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wall -g  -Wl,--enable-auto-import CMakeFiles/task.dir/src/main.cpp.o CMakeFiles/task.dir/src/automata.cpp.o  -o task.exe -Wl,--out-implib,libtask.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libtask_lib.a 

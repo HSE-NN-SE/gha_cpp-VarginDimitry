@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libtask_lib.a  CMakeFiles/task_lib.dir/src/main.cpp.o CMakeFiles/task_lib.dir/src/automata.cpp.o
+/usr/bin/ranlib.exe libtask_lib.a
