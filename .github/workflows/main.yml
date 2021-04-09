@@ -30,7 +30,6 @@ jobs:
       - name: My_prog
         run: |
           g++ src/*.cpp include/*.h -o main
-          ls
         
       - name: RUN
         run: ./main
@@ -42,5 +41,14 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
           message: Hello, world!
+          
+      - uses: actions/download-artifact@v1
+        with:
+          name: StandaloneLinux64
+          path: main
+          
+      - uses: actions/checkout@master
+      - name: ls
+        run: ls
           
           
