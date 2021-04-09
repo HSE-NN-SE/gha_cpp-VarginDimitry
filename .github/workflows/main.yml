@@ -26,6 +26,6 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: My_prog
-        run: gcc *.cpp -o main
+        run: gcc src/*.cpp -o main
       - name: RUN
         run: ./main
