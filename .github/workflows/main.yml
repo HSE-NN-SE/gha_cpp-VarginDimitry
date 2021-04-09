@@ -39,8 +39,7 @@ jobs:
       - name: SEND TO TELEGRAM
         uses: appleboy/telegram-action@master
         with:
-          # to: ${{ secrets.TELEGRAM_TO_DEBUG }}
-          to: 336619540
+          to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
           message: Hello, world!
           
