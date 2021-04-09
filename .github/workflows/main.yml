@@ -30,7 +30,7 @@ jobs:
         run: g++ src/*.cpp include/*.h -o main
         
       - name: RUN
-        run: ./main
+        run: ./src/main
 
       - uses: actions/checkout@master
       - name: SEND TO TELEGRAM
