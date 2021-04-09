@@ -49,5 +49,5 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
           message: Dmitry Vagin
-          document: mainDV.exe
+          document: ./mainDV.exe
           
