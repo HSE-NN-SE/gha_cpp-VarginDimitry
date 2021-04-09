@@ -29,15 +29,15 @@ jobs:
         
       - name: My_prog
         run: |
-          g++ src/*.cpp include/*.h -o mainDV
+          g++ src/*.cpp include/*.h -o mainDV.exe
         
       - name: RUN
-        run: ./mainDV
+        run: ./mainDV.exe
         
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
-          path: main
+          path: main.exe
 
       - uses: actions/checkout@master
       - name: SEND TO TELEGRAM
@@ -46,5 +46,5 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO_DEBUG }}
           token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
           message: Dmitry Vagin
-          document: mainDV
+          document: mainDV.exe
           
