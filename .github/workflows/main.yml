@@ -39,15 +39,20 @@ jobs:
           name: mainDV.exe
           path: mainDV.exe
       
-      - name: ls
-        run: ls
-        
-      - uses: actions/checkout@master
-      - name: SEND TO TELEGRAM
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO_DEBUG }}
-          token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
-          message: Dmitry Vagin
-          document: "*.exe"
+  send:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: ls
+      run: ls
+    
+    - uses: actions/checkout@master
+    - name: SEND TO TELEGRAM
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO_DEBUG }}
+        token: ${{ secrets.TELEGRAM_TOKEN_DEBUG }}
+        message: Dmitry Vagin
+        document: "*.exe"
           
