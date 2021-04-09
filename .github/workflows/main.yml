@@ -29,7 +29,7 @@ jobs:
       - name: My_prog
         run: g++ src/*.cpp include/*.h -o main
       - name: RUN
-        run: main
+        run: ./main
 
       - uses: actions/checkout@master
       - name: SEND TO TELEGRAM
