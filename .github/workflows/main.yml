@@ -29,7 +29,6 @@ jobs:
       - name: My_prog
         run: |
           g++ src/*.cpp include/*.h -o main,
-          make main
         
       - name: RUN
         run: ./main
